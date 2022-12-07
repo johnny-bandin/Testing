@@ -1,0 +1,318 @@
+<!-- ?xml version='1.0' encoding='UTF-8'? -->
+<link href="/github-markdown-css/github-css.css" rel="stylesheet"/>
+<meta charset="utf-8" content="text/html"/>
+<div class="gist">
+<style class="formula-style">
+        svg.gh-md-to-html-formula {
+            fill: black;
+        }
+    </style>
+<div class="gist-file"> <!-- This is the class that is responsible for the boxing! -->
+<div class="gist-data">
+<div class="js-gist-file-update-container js-task-list-container file-box">
+<div class="file" id="user-content-article-outline">
+<div class="Box-body readme blob js-code-block-container p-5 p-xl-6" id="user-content-file-docker-image-pull-md-readme" style="margin-left: 40px; margin-right: 40px; margin-top: 20px; margin-bottom: 20px">
+<article class="markdown-body entry-content container-lg" itemprop="text">
+<h1 id="user-content-technologies-used-and-future-technologies">
+<a aria-hidden="true" class="anchor" href="#user-content-technologies-used-and-future-technologies" id="user-content-technologies-used-and-future-technologies" name="user-content-technologies-used-and-future-technologies"><span aria-hidden="true" class="octicon octicon-link"></span></a>Technologies used and future technologies.</h1>
+<h2 id="user-content-this-outline-will-list-what-technologies-are-used-in-our-network-infrastructure-after-the-completion-of-this-training-jcu-members-will-have-the-oppurtunity-in-lieu-of-sonoc-rip-to-have-a-deeper-understanding-of-the-networking-technology-we-use-and-how-we-utilize-it-in-our-enterprise-looking-towards-the-future-at-the-end-of-this-training-i-will-go-over-cisco-sdn-technologies-and-also-cloud-based-networking-infrastructure-azure">
+<a aria-hidden="true" class="anchor" href="#user-content-this-outline-will-list-what-technologies-are-used-in-our-network-infrastructure-after-the-completion-of-this-training-jcu-members-will-have-the-oppurtunity-in-lieu-of-sonoc-rip-to-have-a-deeper-understanding-of-the-networking-technology-we-use-and-how-we-utilize-it-in-our-enterprise-looking-towards-the-future-at-the-end-of-this-training-i-will-go-over-cisco-sdn-technologies-and-also-cloud-based-networking-infrastructure-azure" id="user-content-this-outline-will-list-what-technologies-are-used-in-our-network-infrastructure-after-the-completion-of-this-training-jcu-members-will-have-the-oppurtunity-in-lieu-of-sonoc-rip-to-have-a-deeper-understanding-of-the-networking-technology-we-use-and-how-we-utilize-it-in-our-enterprise-looking-towards-the-future-at-the-end-of-this-training-i-will-go-over-cisco-sdn-technologies-and-also-cloud-based-networking-infrastructure-azure" name="user-content-this-outline-will-list-what-technologies-are-used-in-our-network-infrastructure-after-the-completion-of-this-training-jcu-members-will-have-the-oppurtunity-in-lieu-of-sonoc-rip-to-have-a-deeper-understanding-of-the-networking-technology-we-use-and-how-we-utilize-it-in-our-enterprise-looking-towards-the-future-at-the-end-of-this-training-i-will-go-over-cisco-sdn-technologies-and-also-cloud-based-networking-infrastructure-azure"><span aria-hidden="true" class="octicon octicon-link"></span></a>This outline will list what technologies are used in our network infrastructure. After the completion of this training JCU members will have the oppurtunity in lieu of SONOC (RIP) to have a deeper understanding of the networking technology we use, and how we utilize it in our enterprise. Looking towards the future, at the end of this training I will go over Cisco SDN technologies and also Cloud-based networking infrastructure (Azure).</h2>
+<ol>
+<li>
+<strong>VLANs</strong> -- Virtual Local Area Networks are used to segment traffic in our local environments<ul>
+<li>
+802.1q encapsulation</li>
+<li>
+Trunking, VLAN pruning, static trunks</li>
+<li>
+Private VLANs</li>
+<li>
+SVIs</li>
+</ul>
+</li>
+<li>
+<strong>BDIs</strong> -- Bridge Domain interfaces</li>
+<li>
+<strong>etherchannel</strong> -- Etherchannel is the Cisco technology that does link aggregation and improves bandwidth on L2/L3 links.<ul>
+<li>
+Layer 2 LACP</li>
+<li>
+Layer 3 LACP</li>
+<li>
+VSS/Stackwise</li>
+</ul>
+</li>
+<li>
+<strong>DHCP</strong> -- Dynamic Host Control Protocol<ul>
+<li>
+iOS Configuration</li>
+<li>
+DHCP pools for VRFs</li>
+<li>
+DHCP exclusion</li>
+<li>
+IP helper-address (DHCP Relay)</li>
+<li>
+DHCP options (150, 66, 67)</li>
+</ul>
+</li>
+<li>
+<strong>Layer 2 Security</strong> -- Our enterprise employs security control at layer 2 to protect our enterprise<ul>
+<li>
+NAC/802.1x (overview not configuration)</li>
+<li>
+DHCP Snooping</li>
+<li>
+Blackhole VLANs</li>
+<li>
+Dynamic ARP inspection</li>
+</ul>
+</li>
+<li>
+<strong>Key Chains</strong> -- Key chains are used for network authentication between control plane protocols like - OSPF, EIGRP, NTP<ul>
+<li>
+key chain configuration</li>
+<li>
+rolling keys</li>
+<li>
+lifetimes</li>
+</ul>
+</li>
+<li>
+<strong>ACLs</strong> -- Access Control Lists identify traffic to be filtered, distributed, or used in QOS/ZBF.<ul>
+<li>
+Standard ACLs</li>
+<li>
+Extended ACLs</li>
+<li>
+Named ACLs</li>
+<li>
+Editing ACLs</li>
+<li>
+Applying ACLs to different interfaces (VTY, ethernet)</li>
+<li>
+Using ACLs to identify traffic in policiing policies (QOS), or redistribution</li>
+</ul>
+</li>
+<li>
+<strong>NTP</strong> -- Network timing protocol is essential when employing security controls like authentication for EIGRP. Timing must be synchronized across an enterprise.<ul>
+<li>
+Stratum levels</li>
+<li>
+NTP iOS configuration</li>
+<li>
+NTP authentication</li>
+<li>
+setting clock manually</li>
+</ul>
+</li>
+<li>
+<strong>AAA</strong> -- Authentication, Authorization, and Acccounting. AAA is used in networking to employ TACACS, and RADIUS technologies for Network Access Control (NAC), and to integrate iOS devices into Cisco's Identity Services Engine (ISE)<ul>
+<li>
+AAA overview</li>
+<li>
+TACACS authentication/authorization/accounting iOS configuration</li>
+<li>
+RADIUS iOS configuration for 802.1x</li>
+</ul>
+</li>
+<li>
+<strong>EIGRP</strong> -- EIGRP is the IGP we use to route enclave traffic.<ul>
+<li>
+DUAL Algorithm</li>
+<li>
+How Neighborship forms, adjaceny, and topology table</li>
+<li>
+EIGRP rules for neighborship (Hello/hold timers, AS #)</li>
+<li>
+Network command</li>
+<li>
+Stub routing</li>
+<li>
+passive-interfaces</li>
+<li>
+EIGRP Authentication</li>
+<li>
+Leak-maps | distribute lists</li>
+<li>
+Metric tuning (offset lists)</li>
+</ul>
+</li>
+<li>
+<strong>VRF</strong> -- Virtual Route Forwarding is how we create virtual routing tables that are segmeneted logically from the global routing table<ul>
+<li>
+VRF overview and use case (JSOC Enterprise specific)</li>
+<li>
+VRF iOS configuration</li>
+<li>
+Applying an interface to a VRF</li>
+<li>
+Applying a VRF to routing protocol</li>
+</ul>
+</li>
+<li>
+<strong>QOS</strong> - Quality of Service is used for control plane policing, identifying, marking and classifying traffic, and can be used in degraded environments to prioritize mission essential traffic<ul>
+<li>
+QOS overview (DCSP, TOS, COS)</li>
+<li>
+QOS methods (marking, classifying, policing, queing, shaping)</li>
+<li>
+Cisco Common Classification policy language (CP3L), class-maps, policy-maps, service-maps</li>
+<li>
+Applying QOS to interfaces, CoPP, and DMVPN tunnels</li>
+</ul>
+</li>
+<li>
+<strong>ZBF</strong> - Zone based firewalls are used in Cisco iOS to segment and separate traffic on a single router<ul>
+<li>
+ZBF overview (inside, outside, self)</li>
+<li>
+ZBF configuration C3PL</li>
+<li>
+Applying the zones</li>
+</ul>
+</li>
+<li>
+<strong>IPSEC</strong> -- Internet Protocol Security is a encryption technology that is used for VPNs and employs authentication, confidentiality, and non-repudiation for your data traffic<ul>
+<li>
+VPN overview</li>
+<li>
+ISAKMP overview</li>
+<li>
+Internet Key Exchange over (IKEv1, IKEv2)</li>
+<li>
+IPSec iOS configuration</li>
+<li>
+Applying IPSEC to interfaces</li>
+</ul>
+</li>
+<li>
+<strong>DMVPN</strong> -- Dynamic Multipoint VPN is a Hub-and-spoke topology used in Cisco devices to create dynamic VPNs using an NBMA and NHS address. (Underlay/overlay)<ul>
+<li>
+DMVPN configuration</li>
+<li>
+Phase 2 / 3 configuration</li>
+<li>
+Per QOS tunneling on DMVPN</li>
+<li>
+IPSec on DMVPN</li>
+</ul>
+</li>
+<li>
+<strong>FLEXVPN</strong> -- FlexVPN is another VPN technology that can be used in a hub-and-spoke topology<ul>
+<li>
+FlexVPN overview (pros and cons, FLexVPN vs DMVPN)</li>
+<li>
+FlexVPN configuration using PSK</li>
+<li>
+FlexVPN Hub show commands</li>
+</ul>
+</li>
+<li>
+<strong>prefix-lists</strong> - IP Prefix-lists are another way to identify traffic and be used to filter traffic<ul>
+<li>
+Prefix-list overview (pros and cons, prefix-list vs ACL)</li>
+<li>
+prefix-list iOS configuration</li>
+</ul>
+</li>
+<li>
+<strong>route-maps</strong> -- Route maps are used in Cisco iOS for routing policy and can be used for leak-maps and distribute lists in routing protocols<ul>
+<li>
+Route-map overview</li>
+<li>
+Route-map configuration</li>
+</ul>
+</li>
+<li>
+<strong>redistribution</strong> -- Routing protocol redistribution allows multiple routing protocols to share routes with each other<ul>
+<li>
+Redistribution overview (why and where we use it)</li>
+<li>
+OSPF--BGP configuration</li>
+<li>
+EIGRP--OSPF configuration</li>
+<li>
+EIGRP--BGP configuration</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>
+<strong>OSPF</strong> - Another IGP we use as the underlay for our Core/transport network</li>
+<li>
+Single area</li>
+</ul>
+</li>
+<li>
+<strong>BGP</strong> -- This is the exterior gateway protocol used to share routes between autonomus systems and our core transport network.<ul>
+<li>
+BGP overview (IGP vs EGP, Autonomous systems, how BGP is an application)</li>
+<li>
+BGP metrics/weights</li>
+<li>
+iBGP configuation</li>
+<li>
+eBGP configuation</li>
+<li>
+route reflector configuration</li>
+</ul>
+</li>
+<li>
+<strong>MPLS</strong> -- Multi protocol label switching is a networking technology that uses "labels" to route traffic and is used to traffic engineer our transport network<ul>
+<li>
+MPLS overview (why we use it, layer 2 vs layer 3, MPLS L3 VPN)</li>
+<li>
+TE tunnels</li>
+<li>
+OSPF underlay</li>
+<li>
+RSVP</li>
+<li>
+LDP</li>
+</ul>
+</li>
+<li>
+<strong>SNMP</strong> -- Simple Network Management protocol is a network application protocol that is used to pull information and map our network<ul>
+<li>
+SNMPv3 configuration</li>
+</ul>
+</li>
+<li>
+<strong>applets</strong> -- EEM applets are triggered code that is used to dynamically apply configuration without administrator intervention<ul>
+<li>
+Applet overview (how and why we use them in our enterprise)</li>
+<li>
+Applet configuration</li>
+</ul>
+</li>
+<li>
+<strong>SD-WAN</strong> -- SD-WAN is a SDN based technology that uses Cisco vDevice infrastrcure to centralize network routing by using policies and consistent configuration<ul>
+<li>
+SD-WAN overview and why we would use it over MPLS</li>
+<li>
+SD-WAN hardware constraints</li>
+<li>
+SD-WAN devices, vAppliances</li>
+<li>
+SD-WAN route policies and configuration</li>
+</ul>
+</li>
+<li>
+<strong>SD-ACCESS</strong> -- SD-Access is a SDN technology that can be used to centralize the control plane of network infrastructure</li>
+<li>
+<strong>Azure networking</strong> -- Cloud networking is a new way to route traffic through a cloud based infrastructure using VPCs and Cloud data centers<ul>
+<li>
+VPCs</li>
+<li>
+Public Cloud network infrastructure</li>
+</ul>
+</li>
+</ol>
+</article>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
